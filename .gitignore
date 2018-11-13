@@ -1,0 +1,5 @@
+# Adatbazisok:
+*.db
+
+# Python compiled fájlok
+*.pyc
