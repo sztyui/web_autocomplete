@@ -2,8 +2,10 @@ from flask import Flask, request
 from flask import jsonify
 from sqlite3_database import session, varosok
 from flask_marshmallow import Marshmallow
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 ma = Marshmallow(app)
 
 @app.route('/telepulesek')

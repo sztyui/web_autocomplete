@@ -10,6 +10,3 @@ session = Session()
 
 metadata = MetaData()
 varosok = Table('varosok', metadata, autoload=True, autoload_with=engine)
-
-# for instance in session.query(varosok).order_by(varosok.c.nev):
-#    print(instance)
